@@ -1,0 +1,19 @@
+/* collapse */
+
+.collapse :is(input, label:has(:not(input:checked))+section) {
+  display: none;
+}
+
+/* page-specific */
+
+div {
+  margin: .25em;
+  padding: .25em;
+  border: 1px solid #aeaeae;
+  background-color: #eaeaea;
+  border-radius: .5em;
+
+  section {
+    font-size: small;
+  }
+}
