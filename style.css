@@ -1,0 +1,53 @@
+:root {
+    --primary: rebeccapurple;
+    --tile: #f5f5f5;
+    --border: grey;
+
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  :is(main, footer) {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1em;
+  }
+
+  main {
+    padding: 0 10%;
+  }
+
+  @media (max-width: 20em) {
+    main {
+      padding: 0 0;
+    }
+  }
+
+  footer {
+    justify-content: center;
+    color: grey;
+    margin-top: 1em;
+  }
+
+  article {
+    border: .1em solid var(--border);
+    border-radius: .5em;
+    background-color: var(--tile);
+    flex: 0 1 16em;
+
+    a {
+      display: flex;
+      flex-flow: column nowrap;
+      text-decoration: none;
+    }
+
+    img {
+      width: 15em;
+      height: 10em;
+      margin: 0 .5em .5em .5em;
+    }
+
+    strong {
+      margin: .5em;
+      color: var(--primary);
+    }
+  }
